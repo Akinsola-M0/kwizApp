@@ -1,0 +1,76 @@
+:root{
+    --hue-background:50;
+    --hue-wrong:0;
+    --hue-right:145;
+}
+body,html{
+    --hub:var(--hue-background);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: hsl(var(--hub), 100%, 30%);
+}
+
+
+
+.pane{
+    width: 600px;
+    max-width: 80%;
+    background-color: burlywood;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.pane.correct{
+    --hul: var(--hue-right);
+    background-color: hsl(var(--hul), 100%, 20%);
+}
+
+.pane.wrong{
+    --hum: var(--hue-wrong);
+    background-color: hsl(var(--hum), 100%, 20%);
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    row-gap: 10px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#next,#start{
+      
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+#next:hover{
+    background-color: rgb(22, 13, 1);
+    color: burlywood;
+}
+#start:hover{
+    background-color: rgb(22, 13, 1);
+    color: burlywood;
+}
+
+.hide{
+    display: none;
+}
+
+
+

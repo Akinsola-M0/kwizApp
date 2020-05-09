@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="logo">
+        <H1 style="font-size: 44px;">kwizApp</H1>
+    </div>
+    <div class="pane">
+        <div class="jfh hide" id="jfh">
+        <div class="questions ">
+           <h3 id="kwizquestion" > click next</h3>
+        </div>
+        <div class="answers">
+  <div id = "option_one"><input type="radio" name="answer" id="rbone"> <label id="option_one_text"> </label></div> 
+  <div id = "option_two" ><input type="radio" name="answer" id="rbtwo" value=""><label id="option_two_text"></label></div>
+  <div id = "option_three"><input type="radio" name="answer"id="rbthree" value=""><label id="option_three_text"></label></div>
+  <div id = "option_four"><input type="radio" name="answer" id="rbfour" value=" "> <label id="option_four_text"></label></div>
+        </div>
+        </div>
+        <div class="controls">
+
+            
+        <button id="start">Start</button>
+        <button id="next" class="hide">Next</button>
+
+        </div>
+        
+    </div>
+    <footer>
+   <p>points : </p> <p id="score"></p>
+    </footer>
+    <script src="kwiz.js"></script>
+</body>
+</html>
